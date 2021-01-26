@@ -8,10 +8,21 @@ a{
   font-weight: bold;
   color: #000;
 }
-.octocat img {
+.octocat img:not(.authors img) {
+  border: 2px solid #c2ab86aa;
   width: 20rem;
 }
 
 .authors img {
   width: 1.875rem;
+}
+.image-caption{
+  float: right;
+}
+.authors{
+  float:right;
+}
+.image-footer{
+  border-bottom: 2px solid #c2ab86aa;
+  padding-bottom: 1rem;
 }
