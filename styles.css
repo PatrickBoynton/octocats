@@ -9,6 +9,6 @@ a{
   font-weight: bold;
   color: #000;
 }
-.image-caption{
-  display: inline;
+.octocat > a > img{
+  width: 25rem;
 }
