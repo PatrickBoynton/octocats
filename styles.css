@@ -26,3 +26,8 @@ a{
   border-bottom: 2px solid #c2ab86aa;
   padding-bottom: 1rem;
 }
+.image-number {
+  color: #c2ab86aa;
+  display: inline-block;
+  margin: .3125rem;
+}
