@@ -1,4 +1,3 @@
-
 li{
   list-style: none;
   display: inline-block;
@@ -9,6 +8,10 @@ a{
   font-weight: bold;
   color: #000;
 }
-.octocat > a > img{
-  width: 25rem;
+.octocat img {
+  width: 20rem;
+}
+
+.authors img {
+  width: 1.875rem;
 }
