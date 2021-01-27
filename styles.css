@@ -8,6 +8,9 @@ a{
   font-weight: bold;
   color: #000;
 }
+.octocat {
+  margin: 1.25rem;
+}
 .octocat img:not(.authors img) {
   border: 2px solid #c2ab86aa;
   width: 20rem;
@@ -20,15 +23,18 @@ a{
   float: right;
 }
 ul .image-caption:not(:last-child) {
-  font-size: 100px;
+  font-size: 6.25rem;
 }
 .authors{
   float:right;
+  text-align: right;
+  padding: 0;
 }
 .image-footer{
   border-bottom: 2px solid #c2ab86aa;
   padding-bottom: 1rem;
 }
+
 .image-number {
   color: #c2ab86aa;
   display: inline-block;
