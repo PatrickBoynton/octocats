@@ -1,3 +1,12 @@
+/* In class refactor. */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Helvetica, arial, sans-serif;
+}
 li{
   list-style: none;
   display: inline-block;
@@ -11,9 +20,25 @@ a{
 .octocat {
   margin: 1.25rem;
 }
+
+.octocat > img::after{
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: solid 10px #DEDEDE;
+  border-right: solid 10px transparent;
+  border-bottom: solid 10px transparent;
+  position: absolute;
+  top: 2000px;
+  right: 100%;
+}
 .octocat img:not(.authors img) {
-  border: 2px solid #c2ab86aa;
+  /* Changed the color in class. */
+  border: 2px solid #D7D7D7;
+  /* Added in class. */
+  border-radius: 3px;
   width: 20rem;
+  position: relative;
 }
 
 .authors img {
@@ -22,8 +47,8 @@ a{
 .image-caption{
   float: right;
 }
-ul .image-caption:not(:last-child) {
-  font-size: 6.25rem;
+ul .image-caption {
+  padding-top: .2rem;
 }
 .authors{
   float:right;
@@ -42,4 +67,7 @@ ul .image-caption:not(:last-child) {
 }
 .image-number:before{
   content: "#";
+}
+.image-footer{
+  margin-top: 1.25rem;
 }
