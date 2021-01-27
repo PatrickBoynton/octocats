@@ -19,6 +19,9 @@ a{
 .image-caption{
   float: right;
 }
+ul .image-caption:not(:last-child) {
+  font-size: 100px;
+}
 .authors{
   float:right;
 }
@@ -30,4 +33,7 @@ a{
   color: #c2ab86aa;
   display: inline-block;
   margin: .3125rem;
+}
+.image-number:before{
+  content: "#";
 }
