@@ -20,17 +20,19 @@ a{
 .octocat {
   margin: 1.25rem;
 }
-
-.octocat > img::after{
+.octocat > a {
+  position: relative;
+}
+.octocat > a::after{
   content: "";
   height: 0;
   width: 0;
   border-top: solid 10px #DEDEDE;
   border-right: solid 10px transparent;
-  border-bottom: solid 10px transparent;
+  border-left: solid 10px transparent;
   position: absolute;
-  top: 2000px;
-  right: 100%;
+  bottom: -5px;
+  right: 6px;
 }
 .octocat img:not(.authors img) {
   /* Changed the color in class. */
@@ -38,7 +40,6 @@ a{
   /* Added in class. */
   border-radius: 3px;
   width: 20rem;
-  position: relative;
 }
 
 .authors img {
